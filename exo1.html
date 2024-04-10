@@ -68,7 +68,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'exo1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -130,6 +129,8 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -146,7 +147,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="#">
   
   
   
@@ -177,9 +178,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Extract and load data
                 </a>
             </li>
         </ul>
@@ -382,7 +383,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-from-the-csv-file">Load data from the .csv file</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">Clustering</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parcial-intelligencia-artificial-2">Parcial Intelligencia Artificial 2</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">Clustering</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reduccion-de-dimensiones">Reducción de dimensiones</a></li>
 </ul>
 </li>
@@ -441,7 +443,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/x5/spm_6r5944dfgx3qj8my0m440000gn/T/ipykernel_12479/3658695969.py:2: DeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/x5/spm_6r5944dfgx3qj8my0m440000gn/T/ipykernel_12803/3658695969.py:2: DeprecationWarning: 
 Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
 (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
 but was not found to be installed on your system.
@@ -482,8 +484,10 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 <p>In this project, we leverage a dataset derived from users’ mobile phones to glean insights into global technological infrastructures. This dataset provides valuable information on mobile data usage patterns across different countries, shedding light on the diversity of technological infrastructural needs worldwide. By applying clustering algorithms to this dataset, we aim to identify regions or countries where improvements in antenna infrastructure are most crucial. These improvements will contribute to enhancing mobile signal accuracy and connectivity, thereby optimizing user experiences and supporting the advancement of mobile technology on a global scale.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="clustering">
-<h1>Clustering<a class="headerlink" href="#clustering" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="parcial-intelligencia-artificial-2">
+<h1>Parcial Intelligencia Artificial 2<a class="headerlink" href="#parcial-intelligencia-artificial-2" title="Link to this heading">#</a></h1>
+<section id="clustering">
+<h2>Clustering<a class="headerlink" href="#clustering" title="Link to this heading">#</a></h2>
 <p>To understand the data in this dataset derived from mobile phone usage, I consider several clustering techniques applicable. Specifically, I have utilized the K-means clustering technique. This technique is suitable for grouping data into a predetermined number of clusters based on similarity of features, allowing us to identify patterns and segment countries according to their mobile data usage behavior.</p>
 <p>Furthermore, to determine the optimal number of clusters in the K-means analysis, I employed the silhouette technique. The silhouette technique calculates the cohesion and separation of clusters, helping to identify the ideal number of clusters that maximizes intra-cluster similarity and minimizes inter-cluster similarity. This provides a solid foundation for understanding the underlying data structure and extracting meaningful information about technological infrastructures in different countries.</p>
 <p>In summary, the use of K-means in conjunction with silhouette evaluation has been instrumental in understanding the distribution and clustering needs in this dataset, enabling us to identify countries that could benefit most from improvements in antenna infrastructures to enhance the accuracy and efficiency of mobile data usage.</p>
@@ -528,6 +532,74 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Silhouette score: 0.9010907386668401 with 10 clusters
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">23</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_sampled</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="c1"># Calculate the silhouette score</span>
+<span class="ne">---&gt; </span><span class="mi">23</span> <span class="n">silhouette_avg</span> <span class="o">=</span> <span class="n">silhouette_score</span><span class="p">(</span><span class="n">df_sampled</span><span class="p">,</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">labels_</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Silhouette score:&quot;</span><span class="p">,</span> <span class="n">silhouette_avg</span><span class="p">,</span> <span class="s2">&quot;with&quot;</span><span class="p">,</span> <span class="n">num_clusters</span><span class="p">,</span> <span class="s2">&quot;clusters&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span> <span class="n">silhouette_scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">silhouette_avg</span><span class="p">)</span>
+
+<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/utils/_param_validation.py:213,</span> in <span class="ni">validate_params.&lt;locals&gt;.decorator.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">207</span> <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">208</span>     <span class="k">with</span> <span class="n">config_context</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">209</span>         <span class="n">skip_parameter_validation</span><span class="o">=</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">210</span>             <span class="n">prefer_skip_nested_validation</span> <span class="ow">or</span> <span class="n">global_skip_validation</span>
+<span class="g g-Whitespace">    </span><span class="mi">211</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">212</span>     <span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">213</span>         <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">214</span> <span class="k">except</span> <span class="n">InvalidParameterError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">215</span>     <span class="c1"># When the function is just a wrapper around an estimator, we allow</span>
+<span class="g g-Whitespace">    </span><span class="mi">216</span>     <span class="c1"># the function to delegate validation to the estimator, but we replace</span>
+<span class="g g-Whitespace">    </span><span class="mi">217</span>     <span class="c1"># the name of the estimator by the name of the function in the error</span>
+<span class="g g-Whitespace">    </span><span class="mi">218</span>     <span class="c1"># message to avoid confusion.</span>
+<span class="g g-Whitespace">    </span><span class="mi">219</span>     <span class="n">msg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">220</span>         <span class="sa">r</span><span class="s2">&quot;parameter of \w+ must be&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">221</span>         <span class="sa">f</span><span class="s2">&quot;parameter of </span><span class="si">{</span><span class="n">func</span><span class="o">.</span><span class="vm">__qualname__</span><span class="si">}</span><span class="s2"> must be&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">222</span>         <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">),</span>
+<span class="g g-Whitespace">    </span><span class="mi">223</span>     <span class="p">)</span>
+
+<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/cluster/_unsupervised.py:140,</span> in <span class="ni">silhouette_score</span><span class="nt">(X, labels, metric, sample_size, random_state, **kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span>         <span class="n">X</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">indices</span><span class="p">],</span> <span class="n">labels</span><span class="p">[</span><span class="n">indices</span><span class="p">]</span>
+<span class="ne">--&gt; </span><span class="mi">140</span> <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">silhouette_samples</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">))</span>
+
+<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/utils/_param_validation.py:186,</span> in <span class="ni">validate_params.&lt;locals&gt;.decorator.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">184</span> <span class="n">global_skip_validation</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">()[</span><span class="s2">&quot;skip_parameter_validation&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">185</span> <span class="k">if</span> <span class="n">global_skip_validation</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">186</span>     <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">188</span> <span class="n">func_sig</span> <span class="o">=</span> <span class="n">signature</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">190</span> <span class="c1"># Map *args/**kwargs to the function signature</span>
+
+<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/cluster/_unsupervised.py:292,</span> in <span class="ni">silhouette_samples</span><span class="nt">(X, labels, metric, **kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">288</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;metric&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">metric</span>
+<span class="g g-Whitespace">    </span><span class="mi">289</span> <span class="n">reduce_func</span> <span class="o">=</span> <span class="n">functools</span><span class="o">.</span><span class="n">partial</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">290</span>     <span class="n">_silhouette_reduce</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">label_freqs</span><span class="o">=</span><span class="n">label_freqs</span>
+<span class="g g-Whitespace">    </span><span class="mi">291</span> <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">292</span> <span class="n">results</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">pairwise_distances_chunked</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">reduce_func</span><span class="o">=</span><span class="n">reduce_func</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">293</span> <span class="n">intra_clust_dists</span><span class="p">,</span> <span class="n">inter_clust_dists</span> <span class="o">=</span> <span class="n">results</span>
+<span class="g g-Whitespace">    </span><span class="mi">294</span> <span class="n">intra_clust_dists</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span><span class="n">intra_clust_dists</span><span class="p">)</span>
+
+<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2153,</span> in <span class="ni">pairwise_distances_chunked</span><span class="nt">(X, Y, reduce_func, metric, n_jobs, working_memory, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2151</span> <span class="k">if</span> <span class="n">reduce_func</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2152</span>     <span class="n">chunk_size</span> <span class="o">=</span> <span class="n">D_chunk</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="ne">-&gt; </span><span class="mi">2153</span>     <span class="n">D_chunk</span> <span class="o">=</span> <span class="n">reduce_func</span><span class="p">(</span><span class="n">D_chunk</span><span class="p">,</span> <span class="n">sl</span><span class="o">.</span><span class="n">start</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2154</span>     <span class="n">_check_chunk_size</span><span class="p">(</span><span class="n">D_chunk</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2155</span> <span class="k">yield</span> <span class="n">D_chunk</span>
+
+<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/cluster/_unsupervised.py:181,</span> in <span class="ni">_silhouette_reduce</span><span class="nt">(D_chunk, start, labels, label_freqs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">179</span>         <span class="n">sample_weights</span> <span class="o">=</span> <span class="n">D_chunk</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">180</span>         <span class="n">sample_labels</span> <span class="o">=</span> <span class="n">labels</span>
+<span class="ne">--&gt; </span><span class="mi">181</span>         <span class="n">cluster_distances</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">182</span>             <span class="n">sample_labels</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="n">sample_weights</span><span class="p">,</span> <span class="n">minlength</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">label_freqs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">183</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">185</span> <span class="c1"># intra_index selects intra-cluster distances within cluster_distances</span>
+<span class="g g-Whitespace">    </span><span class="mi">186</span> <span class="n">end</span> <span class="o">=</span> <span class="n">start</span> <span class="o">+</span> <span class="n">n_chunk_samples</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
 </div>
 </div>
@@ -612,6 +684,7 @@ Name: count, dtype: int64
 <p>I created a map that displays the distribution of data points from our world map dataset, utilizing distinct colors to represent different clusters identified through K-means clustering. The use of these colors effectively illustrates the correctness of our chosen number of clusters and provides insights into the geographical distribution of these clusters.</p>
 <p>Each color on the map corresponds to a specific cluster determined by the clustering algorithm. This visualization allows us to visually discern patterns and concentrations of data points across different regions of the world. By accurately capturing the spatial distribution of these clusters, we gain a deeper understanding of the varying mobile data usage behaviors and technological infrastructure needs among different countries.</p>
 <p>This map serves as a powerful tool for identifying regions where infrastructure improvements, such as newer antennas, may be most beneficial in enhancing mobile signal accuracy and efficiency. It reinforces the effectiveness of our clustering approach in segmenting the dataset and highlights actionable insights for optimizing mobile technology on a global scale.</p>
+</section>
 <section id="reduccion-de-dimensiones">
 <h2>Reducción de dimensiones<a class="headerlink" href="#reduccion-de-dimensiones" title="Link to this heading">#</a></h2>
 <p>To visualize the clustering results and accuracy trends based on geographical data, I utilized altitude, longitude, and latitude features. Initially, I applied Principal Component Analysis (PCA) to reduce the dimensionality from 3 to 2 dimensions. This allowed for a clearer visualization of clusters and associated accuracy metrics on a 2D graph.</p>
@@ -963,15 +1036,6 @@ We have also what seems some overlapping but that is based on the altitude that 
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
@@ -993,7 +1057,8 @@ We have also what seems some overlapping but that is based on the altitude that 
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-from-the-csv-file">Load data from the .csv file</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">Clustering</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parcial-intelligencia-artificial-2">Parcial Intelligencia Artificial 2</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">Clustering</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reduccion-de-dimensiones">Reducción de dimensiones</a></li>
 </ul>
 </li>
