@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Extract and load data &#8212; My sample book</title>
+    <title>Parcial Intelligencia Artificial 2 &#8212; My sample book</title>
   
   
   
@@ -180,7 +180,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Extract and load data
+                    Parcial Intelligencia Artificial 2
                 </a>
             </li>
         </ul>
@@ -368,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Extract and load data</h1>
+    <h1>Parcial Intelligencia Artificial 2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,18 +378,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Extract and load data</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-locations-and-store-them-into-a-file">Extract locations and store them into a file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-from-the-csv-file">Load data from the .csv file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-and-load-data">Extract and load data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-locations-and-store-them-into-a-file">Extract locations and store them into a file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-from-the-csv-file">Load data from the .csv file</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parcial-intelligencia-artificial-2">Parcial Intelligencia Artificial 2</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">Clustering</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reduccion-de-dimensiones">Reducción de dimensiones</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -400,18 +396,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="extract-and-load-data">
-<h1>Extract and load data<a class="headerlink" href="#extract-and-load-data" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="parcial-intelligencia-artificial-2">
+<h1>Parcial Intelligencia Artificial 2<a class="headerlink" href="#parcial-intelligencia-artificial-2" title="Link to this heading">#</a></h1>
+<section id="extract-and-load-data">
+<h2>Extract and load data<a class="headerlink" href="#extract-and-load-data" title="Link to this heading">#</a></h2>
 <p><strong>Concatenate all the files to make easier the extraction</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#find data -type f -name &quot;*.txt&quot; -exec cat {} + &gt; all_data.txt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># find data -type f -name &quot;*.txt&quot; -exec cat {} + &gt; all_data.txt</span>
 </pre></div>
 </div>
 </div>
 </div>
 <section id="extract-locations-and-store-them-into-a-file">
-<h2>Extract locations and store them into a file<a class="headerlink" href="#extract-locations-and-store-them-into-a-file" title="Link to this heading">#</a></h2>
+<h3>Extract locations and store them into a file<a class="headerlink" href="#extract-locations-and-store-them-into-a-file" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
@@ -443,7 +441,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/x5/spm_6r5944dfgx3qj8my0m440000gn/T/ipykernel_12943/3658695969.py:2: DeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/x5/spm_6r5944dfgx3qj8my0m440000gn/T/ipykernel_13089/3658695969.py:2: DeprecationWarning: 
 Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
 (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
 but was not found to be installed on your system.
@@ -469,7 +467,7 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 </div>
 </section>
 <section id="load-data-from-the-csv-file">
-<h2>Load data from the .csv file<a class="headerlink" href="#load-data-from-the-csv-file" title="Link to this heading">#</a></h2>
+<h3>Load data from the .csv file<a class="headerlink" href="#load-data-from-the-csv-file" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -484,8 +482,6 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 <p>In this project, we leverage a dataset derived from users’ mobile phones to glean insights into global technological infrastructures. This dataset provides valuable information on mobile data usage patterns across different countries, shedding light on the diversity of technological infrastructural needs worldwide. By applying clustering algorithms to this dataset, we aim to identify regions or countries where improvements in antenna infrastructure are most crucial. These improvements will contribute to enhancing mobile signal accuracy and connectivity, thereby optimizing user experiences and supporting the advancement of mobile technology on a global scale.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="parcial-intelligencia-artificial-2">
-<h1>Parcial Intelligencia Artificial 2<a class="headerlink" href="#parcial-intelligencia-artificial-2" title="Link to this heading">#</a></h1>
 <section id="clustering">
 <h2>Clustering<a class="headerlink" href="#clustering" title="Link to this heading">#</a></h2>
 <p>To understand the data in this dataset derived from mobile phone usage, I consider several clustering techniques applicable. Specifically, I have utilized the K-means clustering technique. This technique is suitable for grouping data into a predetermined number of clusters based on similarity of features, allowing us to identify patterns and segment countries according to their mobile data usage behavior.</p>
@@ -583,58 +579,21 @@ please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
 <span class="g g-Whitespace">    </span><span class="mi">293</span> <span class="n">intra_clust_dists</span><span class="p">,</span> <span class="n">inter_clust_dists</span> <span class="o">=</span> <span class="n">results</span>
 <span class="g g-Whitespace">    </span><span class="mi">294</span> <span class="n">intra_clust_dists</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span><span class="n">intra_clust_dists</span><span class="p">)</span>
 
-<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2144,</span> in <span class="ni">pairwise_distances_chunked</span><span class="nt">(X, Y, reduce_func, metric, n_jobs, working_memory, **kwds)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2142</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2143</span>     <span class="n">X_chunk</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">sl</span><span class="p">]</span>
-<span class="ne">-&gt; </span><span class="mi">2144</span> <span class="n">D_chunk</span> <span class="o">=</span> <span class="n">pairwise_distances</span><span class="p">(</span><span class="n">X_chunk</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="n">n_jobs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2145</span> <span class="k">if</span> <span class="p">(</span><span class="n">X</span> <span class="ow">is</span> <span class="n">Y</span> <span class="ow">or</span> <span class="n">Y</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="n">PAIRWISE_DISTANCE_FUNCTIONS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">2146</span>     <span class="n">metric</span><span class="p">,</span> <span class="kc">None</span>
-<span class="g g-Whitespace">   </span><span class="mi">2147</span> <span class="p">)</span> <span class="ow">is</span> <span class="n">euclidean_distances</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2148</span>     <span class="c1"># zeroing diagonal, taking care of aliases of &quot;euclidean&quot;,</span>
-<span class="g g-Whitespace">   </span><span class="mi">2149</span>     <span class="c1"># i.e. &quot;l2&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">2150</span>     <span class="n">D_chunk</span><span class="o">.</span><span class="n">flat</span><span class="p">[</span><span class="n">sl</span><span class="o">.</span><span class="n">start</span> <span class="p">::</span> <span class="n">_num_samples</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2153,</span> in <span class="ni">pairwise_distances_chunked</span><span class="nt">(X, Y, reduce_func, metric, n_jobs, working_memory, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2151</span> <span class="k">if</span> <span class="n">reduce_func</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2152</span>     <span class="n">chunk_size</span> <span class="o">=</span> <span class="n">D_chunk</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="ne">-&gt; </span><span class="mi">2153</span>     <span class="n">D_chunk</span> <span class="o">=</span> <span class="n">reduce_func</span><span class="p">(</span><span class="n">D_chunk</span><span class="p">,</span> <span class="n">sl</span><span class="o">.</span><span class="n">start</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2154</span>     <span class="n">_check_chunk_size</span><span class="p">(</span><span class="n">D_chunk</span><span class="p">,</span> <span class="n">chunk_size</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2155</span> <span class="k">yield</span> <span class="n">D_chunk</span>
 
-<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/utils/_param_validation.py:186,</span> in <span class="ni">validate_params.&lt;locals&gt;.decorator.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">184</span> <span class="n">global_skip_validation</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">()[</span><span class="s2">&quot;skip_parameter_validation&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">185</span> <span class="k">if</span> <span class="n">global_skip_validation</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">186</span>     <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">188</span> <span class="n">func_sig</span> <span class="o">=</span> <span class="n">signature</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">190</span> <span class="c1"># Map *args/**kwargs to the function signature</span>
-
-<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:2331,</span> in <span class="ni">pairwise_distances</span><span class="nt">(X, Y, metric, n_jobs, force_all_finite, **kwds)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2328</span>         <span class="k">return</span> <span class="n">distance</span><span class="o">.</span><span class="n">squareform</span><span class="p">(</span><span class="n">distance</span><span class="o">.</span><span class="n">pdist</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">))</span>
-<span class="g g-Whitespace">   </span><span class="mi">2329</span>     <span class="n">func</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span><span class="n">distance</span><span class="o">.</span><span class="n">cdist</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">2331</span> <span class="k">return</span> <span class="n">_parallel_pairwise</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">func</span><span class="p">,</span> <span class="n">n_jobs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-
-<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:1871,</span> in <span class="ni">_parallel_pairwise</span><span class="nt">(X, Y, func, n_jobs, **kwds)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1868</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">_return_float_dtype</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1870</span> <span class="k">if</span> <span class="n">effective_n_jobs</span><span class="p">(</span><span class="n">n_jobs</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1871</span>     <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1873</span> <span class="c1"># enforce a threading backend to prevent data communication overhead</span>
-<span class="g g-Whitespace">   </span><span class="mi">1874</span> <span class="n">fd</span> <span class="o">=</span> <span class="n">delayed</span><span class="p">(</span><span class="n">_dist_wrapper</span><span class="p">)</span>
-
-<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/utils/_param_validation.py:186,</span> in <span class="ni">validate_params.&lt;locals&gt;.decorator.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">184</span> <span class="n">global_skip_validation</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">()[</span><span class="s2">&quot;skip_parameter_validation&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">185</span> <span class="k">if</span> <span class="n">global_skip_validation</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">186</span>     <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">188</span> <span class="n">func_sig</span> <span class="o">=</span> <span class="n">signature</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">190</span> <span class="c1"># Map *args/**kwargs to the function signature</span>
-
-<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:347,</span> in <span class="ni">euclidean_distances</span><span class="nt">(X, Y, Y_norm_squared, squared, X_norm_squared)</span>
-<span class="g g-Whitespace">    </span><span class="mi">341</span>     <span class="k">if</span> <span class="n">Y_norm_squared</span><span class="o">.</span><span class="n">shape</span> <span class="o">!=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">Y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
-<span class="g g-Whitespace">    </span><span class="mi">342</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">343</span>             <span class="sa">f</span><span class="s2">&quot;Incompatible dimensions for Y of shape </span><span class="si">{</span><span class="n">Y</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> and &quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">344</span>             <span class="sa">f</span><span class="s2">&quot;Y_norm_squared of shape </span><span class="si">{</span><span class="n">original_shape</span><span class="si">}</span><span class="s2">.&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">345</span>         <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">347</span> <span class="k">return</span> <span class="n">_euclidean_distances</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">X_norm_squared</span><span class="p">,</span> <span class="n">Y_norm_squared</span><span class="p">,</span> <span class="n">squared</span><span class="p">)</span>
-
-<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/pairwise.py:385,</span> in <span class="ni">_euclidean_distances</span><span class="nt">(X, Y, X_norm_squared, Y_norm_squared, squared)</span>
-<span class="g g-Whitespace">    </span><span class="mi">383</span>     <span class="n">distances</span> <span class="o">+=</span> <span class="n">XX</span>
-<span class="g g-Whitespace">    </span><span class="mi">384</span>     <span class="n">distances</span> <span class="o">+=</span> <span class="n">YY</span>
-<span class="ne">--&gt; </span><span class="mi">385</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">distances</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">distances</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">387</span> <span class="c1"># Ensure that distances between vectors and themselves are set to 0.0.</span>
-<span class="g g-Whitespace">    </span><span class="mi">388</span> <span class="c1"># This may not be the case due to floating point rounding errors.</span>
-<span class="g g-Whitespace">    </span><span class="mi">389</span> <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="n">Y</span><span class="p">:</span>
+<span class="nn">File ~/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/metrics/cluster/_unsupervised.py:181,</span> in <span class="ni">_silhouette_reduce</span><span class="nt">(D_chunk, start, labels, label_freqs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">179</span>         <span class="n">sample_weights</span> <span class="o">=</span> <span class="n">D_chunk</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">180</span>         <span class="n">sample_labels</span> <span class="o">=</span> <span class="n">labels</span>
+<span class="ne">--&gt; </span><span class="mi">181</span>         <span class="n">cluster_distances</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">182</span>             <span class="n">sample_labels</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="n">sample_weights</span><span class="p">,</span> <span class="n">minlength</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">label_freqs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">183</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">185</span> <span class="c1"># intra_index selects intra-cluster distances within cluster_distances</span>
+<span class="g g-Whitespace">    </span><span class="mi">186</span> <span class="n">end</span> <span class="o">=</span> <span class="n">start</span> <span class="o">+</span> <span class="n">n_chunk_samples</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -1089,18 +1048,14 @@ We have also what seems some overlapping but that is based on the altitude that 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Extract and load data</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-locations-and-store-them-into-a-file">Extract locations and store them into a file</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-from-the-csv-file">Load data from the .csv file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-and-load-data">Extract and load data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-locations-and-store-them-into-a-file">Extract locations and store them into a file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data-from-the-csv-file">Load data from the .csv file</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parcial-intelligencia-artificial-2">Parcial Intelligencia Artificial 2</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clustering">Clustering</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reduccion-de-dimensiones">Reducción de dimensiones</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
